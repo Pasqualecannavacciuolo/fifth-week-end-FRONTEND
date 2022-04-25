@@ -1,0 +1,11 @@
+<div class="container p-5">
+  <h2>Genera uno spettacolo</h2>
+  <p class="pb-3 fw-light text-muted">Inserisci il numero massimo di prenotazioni per il suddetto spettacolo</p>
+  <form #generateForm ="ngForm" (ngSubmit)="generateSpettacolo(generateForm)">
+      <div class="mb-3">
+        <label for="n_prenotazioni" class="form-label">Massimo numero prenotazioni</label>
+        <input name="n_prenotazioni" ngModel type="number" class="form-control" id="n_prenotazioni" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Genera</button>
+  </form>
+</div>

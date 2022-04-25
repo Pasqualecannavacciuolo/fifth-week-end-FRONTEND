@@ -1,0 +1,4 @@
+export interface Cliente {
+    nominativo: String,
+    numero_telefonico: String
+}

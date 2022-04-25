@@ -1,0 +1,19 @@
+<div class="container p-5">
+    <h2>Genera uno spettacolo</h2>
+    <p class="pb-3 fw-light text-muted">Inserisci il numero massimo di prenotazioni per il suddetto spettacolo</p>
+    <form #prenotaForm ="ngForm" (ngSubmit)="prenotaPosto(prenotaForm)">
+        <div class="mb-3">
+          <label for="id_Spettacolo" class="form-label">ID Spettacolo</label>
+          <input ngModel name="id_Spettacolo" ngModel type="number" class="form-control" id="id_Spettacolo" required>
+        </div>
+        <div class="mb-3">
+          <label for="nominativo" class="form-label">Nominativo</label>
+          <input ngModel name="nominativo" ngModel type="text" class="form-control" id="nominativo" required>
+        </div>
+        <div class="mb-3">
+          <label for="numero_telefonico" class="form-label">Numero telefonico</label>
+          <input ngModel name="numero_telefonico" ngModel type="text" class="form-control" id="numero_telefonico" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Prenota</button>
+    </form>
+</div>
